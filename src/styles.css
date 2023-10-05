@@ -1,0 +1,30 @@
+/* styles.css */
+body {
+    font-family: 'Roboto', sans-serif; /* 使用现代字体，您可以在 Google Fonts 上找到 Roboto */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease; /* 添加背景颜色的平滑过渡效果 */
+  }
+  
+  /* 暗色模式 */
+  body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+  }
+  
+  #dark-mode-toggle {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: 20px; /* 调整按钮位置 */
+    right: 20px; /* 调整按钮位置 */
+  }
+  
+  .container {
+    /* 其他样式保持不变 */
+  }

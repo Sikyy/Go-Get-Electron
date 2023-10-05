@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+header {
+  background-color: rgba(0, 122, 204, 0.7); /* 半透明的背景色 */
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  backdrop-filter: blur(20px); /* 毛玻璃效果，数值可以根据需要调整 */
+}
+
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+.add-torrent {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-torrent h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#torrent-link {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+#add-torrent-btn {
+  padding: 10px 20px;
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.drag-drop-text {
+  font-size: 14px;
+  color: #555;
+}
+
+.torrent-list h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.torrent-item {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.torrent-item .torrent-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.torrent-progress {
+  width: 60%;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 5px;
+  margin-left: 10px;
+  overflow: hidden;
+}
+
+.torrent-progress-bar {
+  height: 100%;
+  width: 0;
+  background-color: #007acc;
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+
+.torrent-controls button {
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.torrent-controls button:hover {
+  background-color: #005f8d;
+}
+
