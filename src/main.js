@@ -6,6 +6,7 @@ if (require('electron-squirrel-startup')) {
   app.quit();
 }
 
+//打开窗口
 const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
@@ -14,7 +15,6 @@ const createWindow = () => {
     webPreferences: {
       preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY,
     },
-    
   });
 
   // and load the index.html of the app.
@@ -32,6 +32,7 @@ app.on('ready', createWindow);
 // Quit when all windows are closed, except on macOS. There, it's common
 // for applications and their menu bar to stay active until the user quits
 // explicitly with Cmd + Q.
+//如果用户不是在 macOS(darwin) 上运行程序，则调用 app.quit()。
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
     app.quit();
